@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link Web | ポートフォリオサイト</title>
+    <link rel="icon" href="画像/linkweb_icon.png" type="image/png" />
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/my.portfolio.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="#">
+            <img
+              src="画像/linkweb_icon.png"
+              alt="Link Web ロゴ"
+              class="logo-img"
+            />
+          </a>
+        </div>
+        <nav class="nav">
+          <div class="menu-btn" id="js-menu-btn">
+            <span></span>
+          </div>
+          <ul id="js-nav-menu">
+            <li><a href="#">Top</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#flow">Flow</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="box-hero">
+      <div class="hero-container">
+        <p class="hero-name">Megumi Ichinose</p>
+        <h1 class="hero-title">Portfolio</h1>
+        <div class="hero-lead-group">
+          <p class="hero-text">つなぐ。<br />未来をかたちにする。</p>
+        </div>
+      </div>
+    </div>
+    <div class="box-works" id="works">
+      <section class="works-section">
+        <div class="container">
+          <div class="profile-header">
+            <h2 class="section-title-en">Works</h2>
+            <p class="section-title-jp">ワークス</p>
+          </div>
+          <div class="works-grid">
+            <div class="works-card" data-modal="modal1">
+              <img
+                src="画像/Spring Sale_img.png"
+                alt="作品1"
+                class="works-img"
+              />
+              <div class="works-info">
+                <span class="category">Banner Design</span>
+              </div>
+            </div>
+            <div class="works-card" data-modal="modal2">
+              <img 
+                src="画像/winter-travel_img.png" 
+                alt="作品2" 
+                class="works-img"
+              />
+              <div class="works-info">
+                <span class="category">Banner Design</span>
+              </div>
+            </div>
+            <div class="works-card" data-modal="modal3">
+              <img
+                src="画像/interior-banner.png"
+                alt="作品3"
+                class="works-img"/>
+              <div class="works-info">
+                <span class="category">Banner Design</span>
+              </div>
+            </div>
+            <div
+              class="works-card is-hidden"
+              style="display: none"
+              data-modal="modal4"
+            >
+              <img
+                src="画像/Autumn market_img.png"
+                alt="作品4"
+                class="works-img"/>
+              <div class="works-info">
+                <span class="category">Flyer Design</span>
+              </div>
+            </div>
+            <div
+              class="works-card is-hidden"
+              style="display: none"
+              data-modal="modal5"
+            >
+              <img src="画像/portfolio_img.jpg" alt="作品5" class="works-img" />
+              <div class="works-info">
+                <span class="category">Web Design / Coding</span>
+              </div>
+            </div>
+            <div
+              class="works-card is-hidden"
+              style="display: none"
+              data-modal="modal6"
+            >
+              <img src="画像/lw_works_logo.png" alt="作品6" class="works-img" />
+              <div class="works-info">
+                <span class="category">Logo Design</span>
+              </div>
+            </div>
+          </div>
+          <div class="btn-more-container">
+            <a href="#" class="more-btn" id="load-more-btn">Load More</a>
+          </div>
+        </div>
+      </section>
+    </div>
+<div class="modal-overlay" id="modal1">
+  <div class="modal-content">
+    <button type="button" class="close-btn">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <img src="画像/Spring Sale_img.png" alt="作品1" class="modal-img" />
+
+    <h2>新春セールバナー</h2>
+
+    <p class="modal-desc">
+      制作区分：スクール課題（架空案件）<br />
+      制作期間：1日<br />
+      使用ツール：Illustrator<br /><br />
+
+      <strong>制作について</strong><br />
+      セールをテーマに制作したスクール課題です。<br /><br />
+
+      <strong>制作ポイント</strong><br />
+      「新春SALE」と70％OFFが伝わるよう、<br class="sp-only" />
+      文字の大きさや配置にメリハリをつけ、<br class="sp-only" />
+      華やかな新春らしさを意識しました。
+    </p>
+  </div>
+</div>
+<div class="modal-overlay" id="modal2">
+  <div class="modal-content">
+    <button type="button" class="close-btn">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <img src="画像/winter-travel_img.png" alt="作品2" class="modal-img" />
+
+    <h2>冬の北海道旅行バナー</h2>
+
+    <p class="modal-desc">
+      制作区分：スクール課題（架空案件）<br />
+      制作期間：2日<br />
+      使用ツール：Photoshop / Illustrator<br /><br />
+
+      <strong>制作について</strong><br />
+      旅行予約を促すバナーです。<br /><br />
+
+      <strong>制作ポイント</strong><br />
+      冬の北海道らしい静けさや、幻想的な雰囲気を<br class="sp-only" />
+      表現し、旅行の魅力が伝わるよう配置しました。
+    </p>
+  </div>
+</div>
+<div class="modal-overlay" id="modal3">
+  <div class="modal-content">
+    <button type="button" class="close-btn">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <img
+      src="画像/interior-banner.png"
+      alt="作品3"
+      class="modal-img"
+    />
+
+    <h2>新生活セールバナー</h2>
+
+    <p class="modal-desc">
+      制作区分：自主制作<br />
+      制作期間：2日<br />
+      使用ツール：Photoshop / Illustrator<br /><br />
+
+      <strong>制作について</strong><br />
+      春の新生活をテーマにしたセールバナーです。<br /><br />
+
+      <strong>制作ポイント</strong><br />
+      春の模様替えをイメージし、明るくあたたかい<br class="sp-only" />
+      雰囲気を黄色で表現しました。
+    </p>
+  </div>
+</div>
+<div class="modal-overlay" id="modal4">
+  <div class="modal-content">
+    <button type="button" class="close-btn">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <img src="画像/Autumn market_img.png" alt="作品4" class="modal-img" />
+
+    <h2>秋のマルシェ</h2>
+
+    <p class="modal-desc">
+      制作区分：自主制作<br />
+      制作期間：2日<br />
+      使用ツール：Illustrator<br /><br />
+
+      <strong>制作について</strong><br />
+      地域向けの秋マルシェを想定したフライヤーです。<br /><br />
+
+      <strong>制作ポイント</strong><br />
+      秋らしい色彩とイラストにこだわり、親しみやすい雰囲気に仕上げました。<br class="sp-only" />
+      情報を整理し、見やすく伝わりやすい構成にしました。
+    </p>
+  </div>
+</div>
+<div class="modal-overlay" id="modal5">
+  <div class="modal-content">
+    <button type="button" class="close-btn">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <img src="画像/portfolio_img.jpg" alt="作品5" class="modal-img" />
+
+    <h2>Portfolio Site</h2>
+
+    <p class="modal-desc">
+      制作区分：自主制作<br />
+      制作期間：1週間<br />
+      使用ツール：Photoshop / Illustrator / HTML / CSS / JavaScript<br /><br />
+
+      <strong>制作について</strong><br />
+      Web制作活動を紹介するサイトを制作。<br /><br />
+
+      <strong>制作ポイント</strong><br />
+      「人と人、人とものをつなぐ」をコンセプトに、<br class="sp-only" />
+      見やすさを意識したデザインから、<br class="sp-only" />
+      コーディングまで一貫して制作しました。
+    </p>
+  </div>
+</div>
+    <div class="modal-overlay" id="modal6">
+      <div class="modal-content">
+        <button type="button" class="close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img src="画像/lw_works_logo.png" alt="作品6" class="modal-img" />
+        <h2>Link Web ロゴデザイン</h2>
+        <p class="modal-desc">
+          制作区分：自主制作<br />
+          制作期間：2日<br />
+          使用ツール：Illustrator<br /><br />
+          <strong>制作について</strong><br />
+          ポートフォリオサイトのロゴを制作しました。<br /><br />
+
+          <strong>制作ポイント</strong><br />
+          人と人、人とものをつなぐをコンセプトに、<br />
+          シンプルなデザインを意識して制作しました。
+        </p>
+      </div>
+    </div>
+
+    <div class="box-skill" id="skill">
+      <section class="skill-section">
+        <div class="container">
+          <div class="profile-header">
+            <h2 class="section-title-en">Skill</h2>
+            <p class="section-title-jp">スキル</p>
+            <p class="section-lead">
+              <span class="text-block">デザインからコーディングまで、</span>
+              <span class="text-block"
+                >Webサイト制作に必要なスキルを活かして、</span
+              >
+              <span class="text-block"
+                >目的に合わせた最適な形をつくります。</span
+              >
+            </p>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <span class="card-number">01</span>
+              <div class="card-icon"><i class="fa-solid fa-desktop"></i></div>
+              <h3 class="card-title-en">Design</h3>
+              <p class="card-title-ja">デザイン</p>
+              <p class="card-text">
+                Illustrator・Photoshopを使用し、<br />バナーやグラフィックなどの<br />デザイン制作を行います。
+              </p>
+              <div class="card-tags">
+                <span class="tag">Illustrator</span>
+                <span class="tag">Photoshop</span>
+              </div>
+            </div>
+            <div class="card">
+              <span class="card-number">02</span>
+              <div class="card-icon">
+                <i class="fa-solid fa-computer-mouse"></i>
+              </div>
+              <h3 class="card-title-en">Web Design</h3>
+              <p class="card-title-ja">Webデザイン</p>
+              <p class="card-text">
+                Figmaを使用したUIデザインから、<br />STUDIOを活用したサイト制作まで、<br />目的に合わせてかたちにします。
+              </p>
+              <div class="card-tags">
+                <span class="tag">Figma</span>
+                <span class="tag">STUDIO</span>
+              </div>
+            </div>
+            <div class="card">
+              <span class="card-number">03</span>
+              <div class="card-icon">
+                <i class="fa-regular fa-keyboard"></i>
+              </div>
+              <h3 class="card-title-en">Coding</h3>
+              <p class="card-title-ja">コーディング</p>
+              <p class="card-text">
+                HTML・CSSを使用したWebサイトのコーディングが可能です。
+                JavaScriptを用いた動きのあるサイト制作まで、幅広く対応いたします。
+              </p>
+              <div class="card-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript<br /></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="box-profile" id="profile">
+      <section class="profile-section">
+        <div class="container">
+          <div class="profile-box">
+            <div class="profile-header">
+              <h2 class="section-title-en">Profile</h2>
+              <p class="section-title-jp">プロフィール</p>
+            </div>
+            <div class="profile-main">
+              <div class="card profile-card">
+                <img src="画像/linkweb_icon.png" alt="profile-logo-img" />
+              </div>
+              <div class="info">
+                <p class="name">Megumi Ichinose</p>
+                <p class="job-title">Web Designer & Engineer</p>
+                <div class="profile-text">
+                  <p>
+                    <span class="text-block">
+                      新しい分野に挑戦したいと思い、
+                    </span>
+                    <span class="text-block">
+                      Webデザインとコーディングを学び始めました。
+                    </span>
+                  </p>
+
+                  <p>
+                    <span class="text-block">
+                      <span class="text-block">
+                        思い描いたものが、少しずつかたちになっていく。
+                      </span>
+                      <span class="text-block">
+                        試行錯誤を重ねたコードが、思いどおりに動く。
+                      </span>
+                  </p>
+
+                  <p>
+                    <span class="text-block"> そんな時間を重ねるうちに、 </span>
+                    <span class="text-block">
+                      Webサイトをつくることが好きになりました。
+                    </span>
+                  </p>
+                </div>
+                <div class="profile-about">
+                  <h3>About Link Web</h3>
+                  <p>人と人、人とモノをつなぐ。</p>
+                  <p>そんな想いを込めて、デザインからコーディングまで手がけた<br>
+                    このサイトを「Link Web」と名付けました。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="box-flow" id="flow">
+      <section class="flow-section">
+        <div class="container">
+          <div class="flow-inner">
+            <div class="flow-header">
+              <h2 class="section-title-en">Flow</h2>
+              <p class="section-title-jp">フロー</p>
+              <p class="flow-lead">
+                <span class="text-block">ご相談から納品まで、</span>
+                <span class="text-block"
+                  >ひとつひとつ丁寧に進めていきます。</span
+                >
+              </p>
+            </div>
+            <div class="flow-grid">
+              <div class="flow-card">
+                <span class="step-num">01</span>
+                <div class="flow-icon-wrap">
+                  <i class="fa-regular fa-comment-dots"></i>
+                </div>
+                <h3>ご相談・ヒアリング</h3>
+                <div class="step-line"></div>
+                <p>
+                  ご希望やお悩みを伺い、<br />目的やイメージを一緒に整理します。
+                </p>
+              </div>
+              <div class="flow-card">
+                <span class="step-num">02</span>
+                <div class="flow-icon-wrap">
+                  <i class="fa-solid fa-pen-fancy"></i>
+                </div>
+                <h3>制作</h3>
+                <div class="step-line"></div>
+                <p>
+                  共有した内容をもとに、
+                  <br />デザイン・コーディングを進めます。
+                </p>
+              </div>
+              <div class="flow-card">
+                <span class="step-num">03</span>
+                <div class="flow-icon-wrap">
+                  <i class="fa-regular fa-file-lines"></i>
+                </div>
+                <h3>納品</h3>
+                <div class="step-line"></div>
+                <p>
+                  最終確認を行ったうえで、<br />
+                  完成したWebサイトをお届けします。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="box-contact" id="contact">
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-inner">
+            <div class="contact-header">
+              <h2 class="section-title-en">Contact</h2>
+              <p class="section-title-jp">コンタクト</p>
+              <p class="contact-lead">
+                Webサイト制作に関するご相談など、<br />お気軽にご連絡ください。
+              </p>
+            </div>
+            <form 
+              class="contact-form"
+              action="https://formspree.io/f/mnpqnwqw"
+              method="POST">
+              <div class="form-group">
+                <label class="form-label">
+                  お名前 <span class="required-text">※必須</span>
+                </label>
+                <input 
+                type="text" 
+                name="name"
+                placeholder="例）田中 太郎" 
+                required 
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">
+                  メールアドレス <span class="required-text">※必須</span>
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="例）example@abc.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">
+                  お問い合わせ内容 <span class="required-text">※必須</span>
+                </label>
+                <textarea
+                name="message"
+                  placeholder="お問い合わせ内容をご記入ください"
+                  rows="8"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-submit">
+                <button type="submit" class="submit-btn">送信</button>
+              </div>
+              <div class="thanks-modal-overlay" id="thanksModal">
+                <div class="thanks-modal-content">
+                  <div class="thanks-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                  </div>
+                  <h3 class="thanks-title">Thank you</h3>
+                  <div class="thanks-line"></div>
+                  <p class="thanks-text">
+                    お問い合わせありがとうございます。<br /><br />
+                    メッセージを受け付けました。<br />
+                    内容を確認のうえ、3日以内にご連絡いたします。
+                  </p>
+                  <button type="button" class="modal-close-btn" id="closeModal">
+                    CLOSE <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#">Top</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#flow">Flow</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <p>© 2026 Link Web</p>
+      </div>
+    </footer>
+    <style>
+      section,
+      [id] {
+        scroll-margin-top: 80px !important;
+      }
+      html {
+        scroll-behavior: smooth !important;
+      }
+    </style>
+    <script>
+      const modalCards = document.querySelectorAll(".works-card");
+      const overlays = document.querySelectorAll(".modal-overlay");
+      const closeButtons = document.querySelectorAll(".close-btn");
+
+      modalCards.forEach((card) => {
+        card.addEventListener("click", () => {
+          const modalId = card.getAttribute("data-modal");
+          const targetModal = document.getElementById(modalId);
+          if (targetModal) {
+            targetModal.classList.add("active");
+          }
+        });
+      });
+
+      closeButtons.forEach((button) => {
+        button.addEventListener("click", (event) => {
+          const overlay = event.target.closest(".modal-overlay");
+          if (overlay) {
+            overlay.classList.remove("active");
+          }
+        });
+      });
+
+      overlays.forEach((overlay) => {
+        overlay.addEventListener("click", (e) => {
+          if (e.target === overlay) {
+            overlay.classList.remove("active");
+          }
+        });
+      });
+
+      const loadMoreBtn = document.getElementById("load-more-btn");
+      const hiddenCards = document.querySelectorAll(".works-card.is-hidden");
+
+      if (loadMoreBtn) {
+        loadMoreBtn.addEventListener("click", function (event) {
+          event.preventDefault();
+          hiddenCards.forEach(function (card) {
+            card.classList.add("is-active");
+          });
+          loadMoreBtn.style.display = "none";
+        });
+      }
+
+const 問い合わせフォーム = document.querySelector(".contact-form");
+const サンクスモーダル = document.getElementById("thanksModal");
+const 閉じるボタン = document.getElementById("closeModal");
+
+if (問い合わせフォーム && サンクスモーダル) {
+  問い合わせフォーム.addEventListener("submit", async function (イベント) {
+    イベント.preventDefault();
+    const フォームデータ = new FormData(問い合わせフォーム);
+
+    try {
+      const response = await fetch(問い合わせフォーム.action, {
+        method: "POST",
+        body: フォームデータ,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        問い合わせフォーム.reset();
+
+        サンクスモーダル.classList.add("active");
+      } else {
+
+        alert("送信に失敗しました。時間をおいて、もう一度お試しください。");
+      }
+    } catch (error) {
+      alert("通信エラーが発生しました。時間をおいて、もう一度お試しください。");
+      console.error(error);
+    }
+  });
+}
+
+if (閉じるボタン && サンクスモーダル) {
+  閉じるボタン.addEventListener("click", function () {
+    サンクスモーダル.classList.remove("active");
+        });
+      }
+
+      const menuBtn = document.getElementById("js-menu-btn");
+      const navMenu = document.getElementById("js-nav-menu");
+      const menuLinks = document.querySelectorAll("#js-nav-menu a");
+
+      if (menuBtn && navMenu) {
+        menuBtn.addEventListener("click", () => {
+          menuBtn.classList.toggle("active");
+          navMenu.classList.toggle("open");
+        });
+      }
+
+      if (menuLinks && menuBtn && navMenu) {
+        menuLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            menuBtn.classList.remove("active"); 
+            navMenu.classList.remove("open"); 
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
