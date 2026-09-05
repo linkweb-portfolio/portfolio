@@ -217,6 +217,7 @@ body {
   line-height: 1.6;
   color: #555;
   font-size: 0.95rem;
+  text-wrap: pretty; /* 行末に1〜2文字だけ残る孤立行を自動回避 */
 }
 .btn-more-container {
   display: block !important;
@@ -272,9 +273,6 @@ body {
 }
 .text-block {
   display: inline;
-}
-.profile-header {
-  text-align: center;
 }
 .card-container {
   display: flex !important;
@@ -374,7 +372,7 @@ body {
 }
 .profile-header {
   text-align: center;
-  margin-bottom: 70p;
+  margin-bottom: 70px; /* 修正: 70p → 70px */
 }
 .profile-header h2 {
   font-size: 48px;
